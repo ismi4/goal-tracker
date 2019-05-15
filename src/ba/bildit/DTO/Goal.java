@@ -7,12 +7,11 @@ public class Goal {
 	private String goalText;
 	private Boolean completed = false;
 
-	
 	public Goal() {
 		
 	}
 	
-	public Goal(String goalName, String goalText) {
+	public Goal(Integer id, String goalName, String goalText) {
 		this.goalName = goalName;
 		this.goalText = goalText;
 	}
