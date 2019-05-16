@@ -7,6 +7,7 @@ public class User {
 	private String name;
 	private String surname;
 	private GoalList listOfGoals;
+	private String password;
 	
 	User() {
 		
@@ -51,6 +52,16 @@ public class User {
 	
 	public void setListOfGoals(GoalList listOfGoals) {
 		this.listOfGoals = listOfGoals;
+	}
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 }

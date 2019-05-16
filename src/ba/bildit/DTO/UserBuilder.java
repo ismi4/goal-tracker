@@ -7,6 +7,7 @@ public class UserBuilder {
 	private String name;
 	private String surname;
 	private GoalList listOfGoals;
+	private String password;
 	
 	public UserBuilder(Integer id) {
 		this.id = id;
@@ -32,6 +33,11 @@ public class UserBuilder {
 		return this;
 	}
 	
+	public UserBuilder withPassword(String password) {
+		this.password = password;
+		return this;
+	}
+	
 	 public User build(){
          User user = new User();  
          user.setId(this.id);
@@ -39,6 +45,7 @@ public class UserBuilder {
          user.setName(this.name);
          user.setSurname(this.surname);
          user.setListOfGoals(this.listOfGoals);
+         user.setPassword(password);
          return user;
      }
 	
