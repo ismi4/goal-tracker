@@ -9,10 +9,9 @@ public class User {
 	private GoalList listOfGoals;
 	private String password;
 	
-	User() {
+	private User() {
 		
 	}
-	
 	
 	public Integer getId() {
 		return id;
