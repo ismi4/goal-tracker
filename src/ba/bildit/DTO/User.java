@@ -9,7 +9,7 @@ public class User {
 	private GoalList listOfGoals;
 	private String password;
 	
-	private User() {
+	User() {
 		
 	}
 	
