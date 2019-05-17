@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import ba.bildit.DTO.User;
 import ba.bildit.DTO.UserBuilder;
 
-public class UserDAOImplementation {
+public class UserDAOImplementation implements UserDAO {
 
 	Connection connection = ConnectionManager.getInstance().getConnection();
 

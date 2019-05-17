@@ -11,9 +11,10 @@ public class Goal {
 		
 	}
 	
-	public Goal(Integer id, String goalName, String goalText) {
+	public Goal(Integer id, String goalName, String goalText, boolean completed) {
 		this.goalName = goalName;
 		this.goalText = goalText;
+		this.completed = completed;
 	}
 	
 	
