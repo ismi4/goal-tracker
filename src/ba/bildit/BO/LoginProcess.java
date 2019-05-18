@@ -30,8 +30,6 @@ public class LoginProcess {
 			mainMenu.mainMenu();
 		} else
 			System.out.println("Entered password is not valid!");
-
-		InitialMenu.initialMenu();
 		
 	}
 	

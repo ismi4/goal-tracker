@@ -24,13 +24,11 @@ public class RegistrationProcess {
 		System.out.println("Enter your surname: ");
 		String surname = Main.input.next();
 		
-		System.out.println("Enter your password: ");
+		System.out.println("Enter your password:");
 		String password = Main.input.next();
 		
 		createUser(username, name, surname, password);
 		System.out.println("The user has been successfully created!");
-		
-		InitialMenu.initialMenu();
 	}
 	
 	

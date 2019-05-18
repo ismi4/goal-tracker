@@ -2,13 +2,16 @@ package ba.bildit.main;
 
 import java.util.Scanner;
 
+import ba.bildit.UI.InitialMenu;
+
 public class Main {
 
 	public static Scanner input = new Scanner(System.in);
 
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		InitialMenu.initialMenu();
 
 	}
 	

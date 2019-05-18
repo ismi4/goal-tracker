@@ -29,7 +29,10 @@ public class UserDAOImplementation implements UserDAO {
 
 				user = new UserBuilder(rs.getInt("id")).withName(rs.getString("name"))
 						.withUsername(rs.getString("username")).withSurname(rs.getString("surname"))
-						.withPassword(rs.getString("password")).build();
+						.withPassword(rs.getString("password"))
+						.withListOfGoals((new GoalDAOImplementation().
+								retrieveGoalsIntoList(rs.getInt("id"))))
+						.build();
 
 				rs.close();
 			}

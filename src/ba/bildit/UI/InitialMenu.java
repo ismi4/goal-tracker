@@ -25,13 +25,19 @@ public static void initialMenu() {
 			try {
 				LoginProcess.loginProcess();
 			} catch (SQLException e) {
+				System.out.println(e);
 				System.out.println("There was an issue while trying to log you in!");
+			} finally {
+				InitialMenu.initialMenu();
 			}
 		else {
 			try {
 				RegistrationProcess.registrationProcess();
 			} catch (SQLException e) {
+				System.out.println(e);
 				System.out.println("There was an issue while trying to register you!");
+			} finally {
+				InitialMenu.initialMenu();
 			}
 		}
 		

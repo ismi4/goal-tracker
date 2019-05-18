@@ -46,6 +46,11 @@ public class Goal {
 		this.id = id;
 	}
 	
+	@Override
+	public String toString() {
+		return "-----" + goalName + " -----" + "\n" + goalText;
+	}
+	
 	
 	
 	
