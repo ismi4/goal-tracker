@@ -10,7 +10,7 @@ import ba.bildit.main.Main;
 
 public class LoginProcess {
 	
-	public static void loginProcess() {
+	public static void loginProcess() throws SQLException {
 		
 		System.out.println("Enter your username: ");
 		String username = Main.input.next();
